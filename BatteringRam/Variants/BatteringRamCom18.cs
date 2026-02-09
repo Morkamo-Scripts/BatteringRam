@@ -127,7 +127,7 @@ namespace BatteringRam.Variants
                 return;
             }
 
-            (doorVariant as IDamageableDoor)?.ServerDamage(ushort.MaxValue, DoorDamageType.Weapon);
+            (doorVariant as IDamageableDoor)?.ServerDamage(ushort.MaxValue, DoorDamageType.ServerCommand);
         }
         
         private void OnChangedItem(ChangedItemEventArgs ev)
